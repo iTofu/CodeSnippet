@@ -71,3 +71,27 @@
 
 
 @end
+
+
+/**
+ *  myInstancetype
+ */
++ (instancetype)<#name#>With<#property#>:(<#type#> *)<#property#>;
+- (instancetype)initWith<#property#>:(<#type#> *)<#property#>;
+
+
+/**
+ *  mySharedInstance
+ */
++ (instancetype)shared {
+    static <#type#> *_shared = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _shared = [[self alloc] init];
+    });
+    return _shared;
+}
+
+
+
+

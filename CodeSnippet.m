@@ -93,5 +93,37 @@
 }
 
 
+/**
+ *  myLabel
+ */
+VNiLabel *<#label#> = [[VNiLabel alloc] initWithFrame:CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)];
+<#label#>.font = kFont<#Size#>(<#s#>);
+<#label#>.text = @"<#text#>";
+<#label#>.textColor = kColor_<#color#>;
+<#label#>.textAlignment = NSTextAlignmentLeft;
+[<#superView#> addSubview:<#label#>];
+
+/**
+ *  myImageView
+ */
+VNiImageView *<#imageView#> = [[VNiImageView alloc] initWithFrame:CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)];
+<#imageView#>.image = [UIImage imageNamed:<#(nonnull NSString *)#>];
+[<#superView#> addSubview:<#imageView#>];
+
+/**
+ *  myButton
+ */
+VNiButton *<#button#> = [[VNiButton alloc] initWithFrame:CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)];
+<#button#>.titleLabel.font = kFont<#Size#>(<#s#>);
+[<#button#> setTitle:<#(nullable NSString *)#> forState:UIControlStateNormal];
+[<#button#> setImage:<#(nullable UIImage *)#> forState:UIControlStateNormal];
+[<#button#> addTarget:self action:@selector(<#selector#>) forControlEvents:UIControlEventTouchUpInside];
+[<#superView#> addSubview:<#button#>];
+
+/**
+ *  myView
+ */
+VNiView *<#view#> = [[VNiView alloc] initWithFrame:CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)];
+[<#superView#> addSubview:<#view#>];
 
 

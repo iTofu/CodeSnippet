@@ -127,3 +127,12 @@ VNiView *<#view#> = [[VNiView alloc] initWithFrame:CGRectMake(<#CGFloat x#>, <#C
 [<#superView#> addSubview:<#view#>];
 
 
+/**
+ *  myServerQuestion
+ */
+/**
+ *  SERVER_Q
+ *  <#Question#>
+ */
+
+
